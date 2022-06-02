@@ -1,0 +1,56 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="s4d_login" id="$h|.mwy;DAP!/n[ydXQS" x="82" y="111">
+    <value name="TOKEN">
+      <block type="text" id="z$H_F+A2}.{f4TIYLGXM">
+        <field name="TEXT">OTY3MzAxMDA0MDc0ODE1NTU4.GaBmUg.7tZMdT8gcT82ES54MH_Gz7PKCWRV-4I6xK8Ne4</field>
+      </block>
+    </value>
+  </block>
+  <block type="s4d_on_message" id=";E3z8nwz7W1Y;DQR`2Bp" x="139" y="272">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="+uZcPttHPVglEA][~9K?">
+        <value name="IF0">
+          <block type="logic_compare" id="VAhiCdRNG3wxUI][-tH?">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="s4d_message_content" id="tOim+LJhfK8/%W:7R|3m"></block>
+            </value>
+            <value name="B">
+              <block type="text_join" id="=B%-6[:?2kNsF|qiLs%t">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="e;qVr7L[%QU?-1-oX}u{">
+                    <field name="TEXT">;rps</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="s4d_mentioned_member" id="6Xx1C18Y4W5J5-OZgc5H"></block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="s4d_reply" id="[ULKR.;-t7PpGP~:.5PM">
+            <value name="CONTENT">
+              <shadow type="text" id=";|0QA!QV{t4uNm7O@h79">
+                <field name="TEXT">DUEL TO </field>
+              </shadow>
+              <block type="text_join" id="adRmUu7C7Vq|RW}4d1[`">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="[[PYs4TuK;0q(uw32YYj">
+                    <field name="TEXT">DUEL TOO </field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="s4d_mentioned_member" id="Ho%,fwkNSz?r*qNlwU#n"></block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
